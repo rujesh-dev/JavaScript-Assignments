@@ -20,6 +20,24 @@
 
 function reverseString(str) {
   // Your code here
+  const result = [];
+  // const str = "hello world"
+  const arr = str.split('');;
+  console.log(arr);
+  let num =0;
+  for(let i = arr.length-1; i>=0; i--){
+    
+    result[num] = arr[i] 
+    num++;
+  }
+  
+  return result.join('');
+  // const data = result.join('');
+  // console.log(data);
+  
 }
+
+
+// reverseString();
 
 module.exports = reverseString;

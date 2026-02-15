@@ -27,6 +27,16 @@
 
 function countVowels(str) {
   // Your code here
+  // const str = "hello world";
+  const arr = str.split("");
+  let count = 0;
+for(let val of arr){
+  if(val === "a" || val==="e" || val === "i" || val==="o" || val==="u"){
+    count++;
+  }
+}
+return count;
+
 }
 
 module.exports = { countVowels };

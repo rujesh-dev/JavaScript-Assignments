@@ -5,3 +5,20 @@
 // Try to do an expensive operation below the file read and see how it affects the output. 
 // Make the expensive operation more and more expensive and see how it affects the output. 
 
+const fs =require('fs');
+
+const content = fs.readFile("a.txt", "utf-8", (err, data)=>{
+if(err){
+    console.log(err);
+    
+}else{
+    console.log(data);
+    
+}
+})
+
+
+for(let i=0; i<100;i++){
+    console.log(i);
+    
+}
